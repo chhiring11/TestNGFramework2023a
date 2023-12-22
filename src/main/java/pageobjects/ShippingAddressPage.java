@@ -1,5 +1,6 @@
 package pageobjects;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,6 +13,8 @@ public class ShippingAddressPage {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
+
+
 
     @FindBy(xpath = "//input[contains(@data-bind,'textInput: email,')]")
     WebElement emailAddressField;
